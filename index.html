@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poradnik Sprawdzania</title>
+    <style>
+        body{
+            background-color: black;
+            color: grey;
+            font-size: 25px;
+        }
+        span{
+            color: rgb(16, 115, 228);
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <span style="color: red;">▁▂▄▅▆▇█</span> <span>Sprawdzanie Gry</span> <span style="color: red;">█▇▆▅▄▂▁</span>
+    </div>
+
+    <br><br>
+
+    <div id="mc">
+        <!-- Hitbox -->
+        <strong style="color: red;">1.</strong>	<strong style="color: green;">Hitboxy</strong> <br>
+        - Zaczynamy od podstawowych czynnosci: Sprawdzenie hitboxow (<span>f3 + b</span>) Sprawdzamy w ten sposób wielkość Hitboxow oraz warto sprawdzić (<span>f3 + t</span>) <br>
+        <img src="pictures/hitbox.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px; width: 20%;"> <br>
+        Przykładowy wygląd hitboxow.
+
+
+        <br><br>    
+
+        <!--wejsa--> 
+        <strong style="color: red;">2.</strong>	<strong style="color: green;">Zweryfikowanie wersji</strong> <br>
+        - Wersję. Możemy to sprawdzić na kilka sposobów: <br>
+        <span>・</span>F3 – Sprawdzamy lewy górny róg, jest tam wypisana wersja mc. <br>
+        <span>・</span>Najeżdżamy na ikonę mc. <br>
+        <span>・</span>Usuwamy wszystkie wersje w folderze .minecraft/versions  (W przypadku korzystania z <span>feather clienta</span> wszystkie wersje się usuną z racji tego, że to jest launcher). 
+
+        <br><br>
+
+        <!-- Binds -->
+        <strong style="color: red;">3.</strong>     <strong style="color: green;">Sprawdzenie Bindów</strong> <br>
+        - Sprawdzamy przykładowe bindy do odpalania cheatów w minecraft: sprawdzamy po kolei przyciski typu: <span>!, @, #, $, %, ^, &, *</span> lub <br> (klawiatura ekranowa, lewy/prawy shift, i przycisk ins). 
+
+        <br><br>
+
+        <!-- Controls -->
+        <strong style="color: red;">4.</strong>     <strong style="color: green;">Sprawdzenie Ustawień</strong> <br>
+        - Przechodzimy do ustawień, sprawdzamy przypisane klawisze w Controls. ( np.: <span>meteor, mini mapa, player health indicators mod itp</span>).
+
+        <br><br>
+        <!-- Sprawdzenie jezyka - wurst -->
+        <strong style="color: red;">5.</strong>     <strong style="color: green;">Sprawdzenie Języka</strong> <br>
+        - Sprawdzamy język (w przypadku <span>wursta</span>). <br>
+         W przypadku Feather jak ktoś ma Customowe menu to można przywrócić domyślne menu klikając w przycisk: <span>Oryginał Pauzę Screen</span> który znajduje się w prawym górnym rogu. <br>
+        <img src="pictures/original_pause_screen.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+
+        <br><br>
+
+        <strong style="color: red;">6.</strong>     Sprawdzamy ustawienia myszy, ogólnie ustawienia w poszukiwaniu dodatkowych funkcji itp.
+    </div>
+
+    <br>
+
+    <div id="pliki" style="text-align: center;">
+        <span style="color: red;">▁▂▄▅▆▇█</span> <span>Sprawdzanie Plikow</span> <span style="color: red;">█▇▆▅▄▂▁</span>
+        <!-- txt -->
+
+    </div>
+    <br><br>
+    <div>
+        <!-- logs -->
+        <strong style="color: red;">1.</strong>     Wchodzimy w <strong style="color: green;">Resource Packs</strong>. <br>
+        - Wchodzimy w Resource Packs. Sprawdzamy w lewej kolumnie wszystkie paczki zasobów tak jak i po prawej. <br>
+        Jeżeli tekstura wyda się nam podejrzana to sprawdzamy w <span>logach/eksplorator</span> plików czy była wczytywane. <br>
+        Teraz przechodzimy do sprawdzenia wczytywanych ostatnich txt. <br>
+        Wchodzimy do <span>%appdata%</span> na 2 sposoby – (<span>Windows+r=%appdata%</span>) lub przez przycisk open pack folder w resource pack.
+        
+        Wchodzimy do folderu Resource Packs i wciskamy przycisk Data Modyfikacji i ustawiamy go pod nas. <br>
+        Wtedy również się wyświetla ostatnie tekstury i tam sprawdzamy czy tam nie było txt typu <span>xray</span> itp.
+     <br>
+        
+        <img src="pictures/data_modyfikacji.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+
+        Lub wchodzimy w logi – (<span>.minecraft\logs</span>>) – Wpisujemy frazę: <span style="color: red;">reload</span>. Tam się wyswietla ostatnio ładowane txt. 
+        <img src="pictures/reload.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+        
+        Na początku latest są wypisane wszystkie wczytane mody do gry. <br>
+        Możemy również wyszukać takie frazy: <span>xray, wurst, meteor, swapper, swap, PlayerHealthsIndicators</span>.
+
+        
+        <br><br>
+        <!-- mods -->
+        <strong style="color: red;">2.</strong>      Wchodzimy w <strong style="color: green;">mods</strong>. <br>
+        - W folderze <span>%appdata%</span> przechodzimy do folderu mods.<br>
+         Wchodzimy w zakładkę <span>widok</span> i włączamy ukryte elementy, odznaczamy również opcje <span>ukryj chronione pliki systemowe</span>. <br>
+        Następnie kasujemy wszystkie mody aby upewnić się czy są one używane. <br> W przypadku gdy się usuną znaczy to ze nie są. Sprawdzamy mody przy pomocy winrar (<Span>prawym na moda i otwórz za pomocą winrar</Span>). <br>
+        Przeszukujemy wszystkie foldery w poszukiwaniu wspomagacza. Możemy również sprawdzić dekompilatorem kod danego moda. <br>
+        Warto sprawdzać mody z racji tego, że nazwa danego moda może być celowo zmieniona. <br><br>
+        <strong style="color: red;">Przygkład</strong> <br>
+        Plik który będziemy sprawdzać to <span>example.jar</span> <br>
+        <img src="pictures/1rar.png" style="margin-top: 20px; margin-left: 20px;"> <br>
+        Podejrzany plik sprawdzamy winrarem. <br>
+        <img src="pictures/2rar.png"style="margin-top: 20px; margin-left: 20px;width: 50%;"> <br>
+        Jak można zauważyć jest to cheat <span style="color: red;">baritone</span>. <br>
+        Sprawdzić możemy również dekompilatorem, ja użyje do tego <span>Luyten</span>. <br>
+        <img src="pictures/dekompilator.png" style="margin-top: 20px; margin-left: 20px;width: 50%;"> <br>
+        Tutaj jest cała struktura kodu którą możemy sobie przebadać. <br><br>
+        Na sam koniec możemy w wyszukiwarce windowsa wpisac: <span>.jar, .dll</span> itp.
+    </div> <br>
+    Sprawdzanie programami nie zostaną opisane z racji tego, że nie będą wam potrzebne.
+</body>
+</html>
