@@ -38,7 +38,9 @@
         - Wersję. Możemy to sprawdzić na kilka sposobów: <br>
         <span>・</span>F3 – Sprawdzamy lewy górny róg, jest tam wypisana wersja mc. <br>
         <span>・</span>Najeżdżamy na ikonę mc. <br>
-        <span>・</span>Usuwamy wszystkie wersje w folderze .minecraft/versions  (W przypadku korzystania z <span>feather clienta</span> wszystkie wersje się usuną z racji tego, że to jest launcher). 
+        <span>・</span>Usuwamy wszystkie wersje w folderze .minecraft/versions  (W przypadku korzystania z <span>feather clienta</span> wszystkie wersje się usuną z racji tego, że to jest launcher). Po zweryfikowaniu wersji przegladamy jej pliki w poszukiwaniu oznak cheatow (uzyjemy programu np winrar). W moim przypadku jest to 1.19.4 <br>
+
+        <img src="pictures/weryfikacja_wersji_1.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
 
         <br><br>
 
@@ -56,7 +58,7 @@
         <!-- Sprawdzenie jezyka - wurst -->
         <strong style="color: red;">5.</strong>     <strong style="color: green;">Sprawdzenie Języka</strong> <br>
         - Sprawdzamy język (w przypadku <span>wursta</span>). <br>
-         W przypadku Feather jak ktoś ma Customowe menu to można przywrócić domyślne menu klikając w przycisk: <span>Oryginał Pauzę Screen</span> który znajduje się w prawym górnym rogu. <br>
+         W przypadku Feather jak ktoś ma Customowe menu to można przywrócić domyślne menu klikając w przycisk: <span>Oryginał Pause Screen</span> który znajduje się w prawym górnym rogu. <br>
         <img src="pictures/original_pause_screen.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
 
         <br><br>
@@ -76,20 +78,32 @@
         <!-- logs -->
         <strong style="color: red;">1.</strong>     Wchodzimy w <strong style="color: green;">Resource Packs</strong>. <br>
         - Wchodzimy w Resource Packs. Sprawdzamy w lewej kolumnie wszystkie paczki zasobów tak jak i po prawej. <br>
-        Jeżeli tekstura wyda się nam podejrzana to sprawdzamy w <span>logach/eksplorator</span> plików czy była wczytywane. <br>
+        Jeżeli tekstura wyda się nam podejrzana to sprawdzamy w <span>logach/eksplorator</span> plików czy była wczytywana. <br>
         Teraz przechodzimy do sprawdzenia wczytywanych ostatnich txt. <br>
-        Wchodzimy do <span>%appdata%</span> na 2 sposoby – (<span>Windows+r=%appdata%</span>) lub przez przycisk open pack folder w resource pack.
+        Wchodzimy do <span>%appdata%</span> na 2 sposoby – (<span>Windows+r = %appdata%</span>) lub przez przycisk open pack folder w resource pack.
         
         Wchodzimy do folderu Resource Packs i wciskamy przycisk Data Modyfikacji i ustawiamy go pod nas. <br>
         Wtedy również się wyświetla ostatnie tekstury i tam sprawdzamy czy tam nie było txt typu <span>xray</span> itp.
      <br>
         
         <img src="pictures/data_modyfikacji.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
-
-        Lub wchodzimy w logi – (<span>.minecraft\logs</span>>) – Wpisujemy frazę: <span style="color: red;">reload</span>. Tam się wyswietla ostatnio ładowane txt. 
+        <strong style="color: red;">Gdy sprawdzamy logi zawsze sprawdzamy date modyfikacji pliku!</strong>
+        Lub wchodzimy w logi – (<span>.minecraft\logs</span>>) – Wpisujemy frazę: <span style="color: red;">reload</span>. Tam się wyswietla ostatnio ładowane txt. Warto wyszukac to kilka razy poniewaz z poczatku jest wczytywany domyslny txt ktory jest wybrany. W nastepnym przeladowaniu sa dokonywane zmiany.
+    
         <img src="pictures/reload.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
         
-        Na początku latest są wypisane wszystkie wczytane mody do gry. <br>
+        1. Pierwsze wczytanie <span>(ctrl+f = reload)</span>. Domyslnie nie mam wybranego zadnego txt. <br>
+        <img src="pictures/1przeladowanie.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+       
+        2. Drugie wczytanie <span>(ctrl+f = reload)</span>. Ukazuje nam sie wczytany plik <span>example.zip</span> <br>
+        <img src="pictures/2przeladowanie.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+        
+        3. Trzecie przeladowanie <span>(ctrl+f = reload)</span>. Trzecie przeladowanie pokazuje nam ponowne zmiany w txt (dodanie lub usuniecie z listy, w tym przypadku plik <span>example.zip</span> zostal usuniety z listy). <br>
+        <img src="pictures/3przeladowanie.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+
+        Na początku latest.log są wypisane wszystkie wczytane mody do gry. <br>
+        <img src="pictures/load_mods.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;"> <br>
+
         Możemy również wyszukać takie frazy: <span>xray, wurst, meteor, swapper, swap, PlayerHealthsIndicators</span>.
 
         
@@ -110,7 +124,7 @@
         Sprawdzić możemy również dekompilatorem, ja użyje do tego <span>Luyten</span>. <br>
         <img src="pictures/dekompilator.png" style="margin-top: 20px; margin-left: 20px;width: 50%;"> <br>
         Tutaj jest cała struktura kodu którą możemy sobie przebadać. <br><br>
-        Na sam koniec możemy w wyszukiwarce windowsa wpisac: <span>.jar, .dll</span> itp.
+        Na sam koniec możemy w wyszukiwarce windowsa wpisac: <span>.jar, .dll</span> itp. <br><br>
     </div> <br>
     Sprawdzanie programami nie zostaną opisane z racji tego, że nie będą wam potrzebne.
 </body>
